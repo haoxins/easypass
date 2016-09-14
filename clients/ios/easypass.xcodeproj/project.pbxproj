@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486C95D64BD3AEFB1457533D /* Pods_easypass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBDB098CF5003E5A3FF416F /* Pods_easypass.framework */; };
 		E5A0B6411D89AD46004076D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A0B6401D89AD46004076D8 /* AppDelegate.swift */; };
 		E5A0B6431D89AD46004076D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A0B6421D89AD46004076D8 /* ViewController.swift */; };
 		E5A0B6481D89AD46004076D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A0B6471D89AD46004076D8 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19F5D71B7BD47A44E6526500 /* Pods-easypass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easypass.release.xcconfig"; path = "Pods/Target Support Files/Pods-easypass/Pods-easypass.release.xcconfig"; sourceTree = "<group>"; };
+		1BBDB098CF5003E5A3FF416F /* Pods_easypass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easypass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		321B259AD9572E47B5CFE2FC /* Pods-easypass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easypass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easypass/Pods-easypass.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0B63D1D89AD46004076D8 /* easypass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easypass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A0B6401D89AD46004076D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A0B6421D89AD46004076D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486C95D64BD3AEFB1457533D /* Pods_easypass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761AE76C4AFCC310B69E4A39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BBDB098CF5003E5A3FF416F /* Pods_easypass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E539AB54D81F2501C8432307 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				321B259AD9572E47B5CFE2FC /* Pods-easypass.debug.xcconfig */,
+				19F5D71B7BD47A44E6526500 /* Pods-easypass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5A0B6341D89AD46004076D8 = {
 			isa = PBXGroup;
 			children = (
 				E5A0B63F1D89AD46004076D8 /* easypass */,
 				E5A0B63E1D89AD46004076D8 /* Products */,
+				E539AB54D81F2501C8432307 /* Pods */,
+				761AE76C4AFCC310B69E4A39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5A0B64F1D89AD47004076D8 /* Build configuration list for PBXNativeTarget "easypass" */;
 			buildPhases = (
+				887175E046909BE2375CF09B /* [CP] Check Pods Manifest.lock */,
 				E5A0B6391D89AD46004076D8 /* Sources */,
 				E5A0B63A1D89AD46004076D8 /* Frameworks */,
 				E5A0B63B1D89AD46004076D8 /* Resources */,
+				A3BD5C8D00D34CB7277893BB /* [CP] Embed Pods Frameworks */,
+				2A0E8035736DFAB76DA4A5F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A0E8035736DFAB76DA4A5F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easypass/Pods-easypass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		887175E046909BE2375CF09B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3BD5C8D00D34CB7277893BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easypass/Pods-easypass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5A0B6391D89AD46004076D8 /* Sources */ = {
@@ -244,6 +319,7 @@
 		};
 		E5A0B6501D89AD47004076D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 321B259AD9572E47B5CFE2FC /* Pods-easypass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = easypass/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		E5A0B6511D89AD47004076D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F5D71B7BD47A44E6526500 /* Pods-easypass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = easypass/Info.plist;
@@ -285,6 +362,7 @@
 				E5A0B6511D89AD47004076D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
