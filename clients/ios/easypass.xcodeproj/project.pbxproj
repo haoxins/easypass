@@ -120,6 +120,7 @@
 				TargetAttributes = {
 					E5A0B63C1D89AD46004076D8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A87Y52N945;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -322,6 +323,7 @@
 			baseConfigurationReference = 321B259AD9572E47B5CFE2FC /* Pods-easypass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87Y52N945;
 				INFOPLIST_FILE = easypass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hx.easypass;
@@ -335,6 +337,7 @@
 			baseConfigurationReference = 19F5D71B7BD47A44E6526500 /* Pods-easypass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87Y52N945;
 				INFOPLIST_FILE = easypass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hx.easypass;
