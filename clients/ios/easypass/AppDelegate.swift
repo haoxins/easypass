@@ -10,9 +10,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController = UINavigationController()
         navigationController!.navigationBar.isHidden = true
 
-        let viewController: UIViewController = ViewController()
+        let main: UIViewController = ListView()
 
-        self.navigationController!.pushViewController(viewController, animated: false)
+        self.navigationController!.pushViewController(main, animated: false)
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
 
