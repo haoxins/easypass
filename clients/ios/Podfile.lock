@@ -1,12 +1,33 @@
 PODS:
-  - SnapKit (3.0.0)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - RealmSwift (2.0.2):
+    - Realm (= 2.0.2)
+  - SnapKit (3.0.2)
+  - UIHelper (0.1.0)
 
 DEPENDENCIES:
+  - RealmSwift (~> 2.0)
   - SnapKit (~> 3.0)
+  - UIHelper (from `git@github.com:pkg4swift/UIHelper.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  UIHelper:
+    :branch: master
+    :git: git@github.com:pkg4swift/UIHelper.git
+
+CHECKOUT OPTIONS:
+  UIHelper:
+    :commit: 17f5cc71851503b0e93c0d49c78093867143bbcd
+    :git: git@github.com:pkg4swift/UIHelper.git
 
 SPEC CHECKSUMS:
-  SnapKit: 98af0a4e9369d3c58f758967518081dbdc7eb1d9
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  UIHelper: 36a1f3329e1054034ec1a97eac639a22263478d5
 
-PODFILE CHECKSUM: 3b472542e904356f628f8eb9292f2d7174939f8d
+PODFILE CHECKSUM: 0ac2774cb7df90dfc8fc73bada519d86cd1505e4
 
 COCOAPODS: 1.0.1
