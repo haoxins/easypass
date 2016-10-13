@@ -16,7 +16,7 @@ class BaseView: UIViewController {
     }
 
     func authTouchId() {
-        var err:NSError?
+        var err: NSError?
         let ctx = LAContext()
 
         let ok = ctx.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &err)

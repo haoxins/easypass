@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		486C95D64BD3AEFB1457533D /* Pods_easypass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBDB098CF5003E5A3FF416F /* Pods_easypass.framework */; };
+		E589EC9C1DACC97E00642FEC /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589EC9B1DACC97E00642FEC /* item.swift */; };
 		E5A0B6411D89AD46004076D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A0B6401D89AD46004076D8 /* AppDelegate.swift */; };
 		E5A0B6481D89AD46004076D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A0B6471D89AD46004076D8 /* Assets.xcassets */; };
 		E5A0B64B1D89AD47004076D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A0B6491D89AD47004076D8 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 		19F5D71B7BD47A44E6526500 /* Pods-easypass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easypass.release.xcconfig"; path = "Pods/Target Support Files/Pods-easypass/Pods-easypass.release.xcconfig"; sourceTree = "<group>"; };
 		1BBDB098CF5003E5A3FF416F /* Pods_easypass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easypass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		321B259AD9572E47B5CFE2FC /* Pods-easypass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easypass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easypass/Pods-easypass.debug.xcconfig"; sourceTree = "<group>"; };
+		E589EC9B1DACC97E00642FEC /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item.swift; path = model/item.swift; sourceTree = "<group>"; };
 		E5A0B63D1D89AD46004076D8 /* easypass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easypass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A0B6401D89AD46004076D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A0B6471D89AD46004076D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E589EC9A1DACC96D00642FEC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E589EC9B1DACC97E00642FEC /* item.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		E5A0B6341D89AD46004076D8 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		E5A0B63F1D89AD46004076D8 /* easypass */ = {
 			isa = PBXGroup;
 			children = (
+				E589EC9A1DACC96D00642FEC /* model */,
 				E5D64A0E1DABC72000B3BC09 /* view */,
 				E5A0B6401D89AD46004076D8 /* AppDelegate.swift */,
 				E5A0B6471D89AD46004076D8 /* Assets.xcassets */,
@@ -224,6 +235,7 @@
 			files = (
 				E5D64A111DABC73D00B3BC09 /* Base.swift in Sources */,
 				E5D64A161DABCC2200B3BC09 /* Add.swift in Sources */,
+				E589EC9C1DACC97E00642FEC /* item.swift in Sources */,
 				E5A0B6411D89AD46004076D8 /* AppDelegate.swift in Sources */,
 				E5D64A141DABCBAB00B3BC09 /* List.swift in Sources */,
 			);
