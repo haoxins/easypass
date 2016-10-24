@@ -1,4 +1,5 @@
 PODS:
+  - PFColorHash (2.0.0)
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
   - Realm/Headers (2.0.2)
@@ -8,6 +9,7 @@ PODS:
   - UIHelper (0.1.0)
 
 DEPENDENCIES:
+  - PFColorHash (~> 2.0)
   - RealmSwift (~> 2.0)
   - SnapKit (~> 3.0)
   - UIHelper (from `git@github.com:pkg4swift/UIHelper.git`, branch `master`)
@@ -23,11 +25,12 @@ CHECKOUT OPTIONS:
     :git: git@github.com:pkg4swift/UIHelper.git
 
 SPEC CHECKSUMS:
+  PFColorHash: 2c8ccfd2bb011d7c6726e21685de72c64e300048
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   UIHelper: 36a1f3329e1054034ec1a97eac639a22263478d5
 
-PODFILE CHECKSUM: 0ac2774cb7df90dfc8fc73bada519d86cd1505e4
+PODFILE CHECKSUM: 7a10e2853e126bde01f834cdfa0c296322051dcf
 
 COCOAPODS: 1.0.1

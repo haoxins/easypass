@@ -15,6 +15,10 @@ class BaseView: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    func initView() {
+        // noop
+    }
+
     func authTouchId() {
         var err: NSError?
         let ctx = LAContext()
@@ -28,6 +32,7 @@ class BaseView: UIViewController {
         ctx.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "who are you ?", reply: {
             (success, error) -> Void in
             if success {
+                self.initView()
                 return
             }
 

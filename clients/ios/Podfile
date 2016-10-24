@@ -8,6 +8,7 @@ target 'easypass' do
 
   pod 'SnapKit', '~> 3.0'
   pod 'RealmSwift', '~> 2.0'
+  pod 'PFColorHash', '~> 2.0'
   pod 'UIHelper', :git => 'git@github.com:pkg4swift/UIHelper.git', :branch => 'master'
 end
 
